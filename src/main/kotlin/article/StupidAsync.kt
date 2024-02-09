@@ -50,7 +50,7 @@ private fun mainMethod0() {
     println(resultA)
     println(resultB)
     println(resultMain)
-    println(TimeUnit.NANOSECONDS.toMillis(endNano - startNano)) // 5014 приблизительно
+    println(TimeUnit.NANOSECONDS.toMillis(endNano - startNano)) // 15014 приблизительно
 
     /* out:
             threadA # END
@@ -217,7 +217,7 @@ private fun mainMethod3() {
     if (threadResultA.exception.get() != null) println("threadA # END # Exception:" + threadResultA.exception.get())
     else println(resultA)
 
-    val resultB = threadResultA.getWithBlock()
+    val resultB = threadResultB.getWithBlock()
     if (threadResultB.exception.get() != null) println("threadB # END # Exception:" + threadResultB.exception.get())
     else println(resultB)
 
@@ -253,4 +253,4 @@ private fun mainMethod3() {
 
 // TODO : везде добавить случи с Cancel & Exception
 // TODO : везде добавить конкретики, что именно значит "расширять мозг программиста и специфичный стиль"
-//          race condition, atomic operations, synchronize primitive, deadlock, lost exception
+//          heppens-before, race condition, atomic operations, synchronize primitive, deadlock, lost exception

@@ -1,6 +1,25 @@
 import kotlinx.coroutines.*
+import java.net.Socket
+import java.net.URL
+import java.nio.channels.AsynchronousServerSocketChannel
+import java.nio.channels.AsynchronousSocketChannel
+import java.util.concurrent.CompletableFuture
+import kotlin.io.path.Path
 
 fun main(args: Array<String>) {
+
+    URL("").openConnection()
+    Thread.yield()
+//    Path().toFile().writeBytes()
+//    Socket
+//    AsynchronousSocketChannel()
+    AsynchronousServerSocketChannel.open().accept()
+        .let { CompletableFuture.completedFuture(it) }
+        .apply { this.thenAccept {
+
+
+        } }
+
     println("Hello World!")
 
     // Try adding program arguments via Run/Debug configuration.

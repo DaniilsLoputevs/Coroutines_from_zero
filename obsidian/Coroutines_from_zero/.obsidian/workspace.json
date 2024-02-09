@@ -1,0 +1,169 @@
+{
+  "main": {
+    "id": "a664c67db0392eec",
+    "type": "split",
+    "children": [
+      {
+        "id": "3dab5d47c7920a2f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f98c136f067ca793",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Welcome.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8888ef26945d0d71",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Свалка (Даниил).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "03c2c3925e438cfb",
+    "type": "split",
+    "children": [
+      {
+        "id": "bb14a55835a60e63",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "51e93311ffbc47cd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e309fbf47b2a7551",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0a6a6c653b4125d5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "82571ecf9dad8378",
+    "type": "split",
+    "children": [
+      {
+        "id": "3022cf5e4332f86f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "183adbd3ab9d4647",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Свалка (Даниил).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a64dab45a2b157f6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Свалка (Даниил).md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6f13fadbc16a9aa2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "bc7a36f67535da87",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Свалка (Даниил).md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false
+    }
+  },
+  "active": "8888ef26945d0d71",
+  "lastOpenFiles": [
+    "Pasted image 20240209000201.png",
+    "Pasted image 20240208235114.png",
+    "Welcome.md",
+    "Свалка (Даниил).md"
+  ]
+}

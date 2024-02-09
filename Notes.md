@@ -9,6 +9,13 @@ kotlinx.coroutines.Job.invokeOnCompletion(handler: CompletionHandler): Disposabl
 
 
 
+### Notes
+* что такое Параллелизм 
+* разбиение задачек на куски, как они стопаются на уровне потоке 
+
+
+
+
 ### Материалы
 * [(документация) Kotlin Flow](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-flow/)
 * [(видео) Андрей Бреслав — Асинхронно, но понятно. Сопрограммы в Kotlin](https://youtu.be/ffIVVWHpups?si=17zNiuB7jISG3g6w)
