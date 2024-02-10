@@ -30,9 +30,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "dcb535086078469d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Лента.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "19b1cf37ca5c51b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Вопросы -заметки (Даниил).md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Свалка (Даниил).md",
+                "file": "Лента.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Свалка (Даниил).md",
+                "file": "Лента.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Свалка (Даниил).md"
+                "file": "Лента.md"
               }
             }
           }
@@ -159,11 +183,18 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "8888ef26945d0d71",
+  "active": "dcb535086078469d",
   "lastOpenFiles": [
+    "Pasted image 20240210183416.png",
+    "Pasted image 20240210183145.png",
+    "Вопросы -заметки (Даниил).md",
+    "Свалка (Даниил).md",
+    "Лента.md",
+    "Pasted image 20240210182304.png",
+    "Pasted image 20240210181525.png",
+    "Pasted image 20240210180943.png",
     "Pasted image 20240209000201.png",
     "Pasted image 20240208235114.png",
-    "Welcome.md",
-    "Свалка (Даниил).md"
+    "Welcome.md"
   ]
 }
