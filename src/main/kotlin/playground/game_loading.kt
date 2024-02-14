@@ -14,6 +14,10 @@ object ResourceHolder {
     fun getMaxResourceLoaded() = maxResourceLoaded
 }
 
+/**
+ * Получается сабмитим 6 задач при каждом вызове...
+ * suspend режет на части
+ */
 suspend fun loadResource(filename : String) : Any {
     ResourceHolder.addMaxResourceLoaded(5)
     delay(500)
@@ -30,9 +34,10 @@ suspend fun loadResource(filename : String) : Any {
 }
 
 suspend fun main() {
-    val handler = ResourceHolder // variable for debug only
-    CoroutineScope(Dispatchers.Default).launch {// this : CoroutineScope
+    val handler = ResourceHolder // variable for debugger only
+    CoroutineScope(Dispatchers.Default).launch { // this : CoroutineScope
 
+        /* запускает задачи последовательно, однако юзает другой ThreadPool, 1 ветка дерева */
 //        println("submit 1")
 //        withContext(Dispatchers.IO) { loadResource("aaa.png") }
 //        println("submit 2")
@@ -40,6 +45,7 @@ suspend fun main() {
 //        println("submit 3")
 //        withContext(Dispatchers.IO) { loadResource("ccc.png") }
 
+        /* запускает задачи последовательно, 1 ветка дерева */
 //        println("submit 1")
 //        loadResource("aaa.png")
 //        println("submit 2")
@@ -48,6 +54,7 @@ suspend fun main() {
 //       loadResource("ccc.png")
 
 
+        /* запускает задачи параллельно, 3 ветки дерева */
         println("submit 1")
         this.launch { loadResource("aaa.png") }
         println("submit 2")
@@ -58,9 +65,10 @@ suspend fun main() {
     }
 //        .join()
 
+    /* coroutine стартуют не молниеносно и получали кейс: 0 != 0 => false */
 //    while (ResourceHolder.getLoadedResourcesCount() != ResourceHolder.getMaxResourceLoaded().toInt()) {
     while (ResourceHolder.getLoadedResourcesCount() != 15) {
-        // simulate render UI
+        // simulate render UI each frame
         print("\rloading... (loaded parts: ${ResourceHolder.getLoadedResourcesCount()})")
     }
     println("Finish")
