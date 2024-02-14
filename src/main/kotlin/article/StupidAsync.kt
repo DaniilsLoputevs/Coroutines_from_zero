@@ -1,5 +1,7 @@
 package article
 
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.atomic.AtomicReference
 
@@ -254,3 +256,34 @@ private fun mainMethod3() {
 // TODO : везде добавить случи с Cancel & Exception
 // TODO : везде добавить конкретики, что именно значит "расширять мозг программиста и специфичный стиль"
 //          heppens-before, race condition, atomic operations, synchronize primitive, deadlock, lost exception
+
+fun mainRequestDispatcherEndellesLoop() {
+    // check socket -> submit requestProcess() it RequestProcessThreadPool
+}
+suspend fun requestProcess() { // CoroutineThreadPool
+    val id = 1
+    val email = "bla-bla"
+    var data : String = ""
+//    data = httpRequestMyStupidWithBlock() // suspend call
+//    data = withContext(Dispatchers.IO){
+//        httpRequestMyStupidWithBlock()
+//    } // suspend call
+
+//    data = httpRequestSmartEngine()
+
+//    println(data)
+}
+
+/**
+ * Block API
+ */
+suspend fun httpRequestMyStupidWithBlock() : String {
+    // curl http ....
+    return "aaa"
+}
+//suspend fun httpRequestSmartEngine()  : Result<String> {
+//    return withContext(Dispatchers.IO){ // OurSmartDispatcherReactive
+//        httpRequestMyStupidWithBlock()
+//    }
+//}
+
